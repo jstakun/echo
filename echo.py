@@ -1,10 +1,8 @@
 # Echo server program
 import socket
 
-HOST = ''               # Symbolic name meaning all available interfaces
-PORT = 50007              # Arbitrary non-privileged port
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind((HOST, PORT))
+s.bind(('0.0.0.0', 8888))
 s.listen(1)
 
 conn, addr = s.accept()
