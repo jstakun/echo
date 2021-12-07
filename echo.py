@@ -17,7 +17,6 @@ import SocketServer as socketserver
 import socket
 import threading
 import sys
-import netifaces
 from datetime import datetime
 from netifaces import interfaces, ifaddresses, AF_INET
 
